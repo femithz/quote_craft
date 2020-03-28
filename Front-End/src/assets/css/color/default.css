@@ -1,0 +1,36 @@
+::selection {
+  background-color:#06007c;
+  color: #fff;
+}
+::-moz-selection {
+  background-color:#06007c;
+  color: #fff;
+}
+
+
+a,
+.theme-color,
+.mm-column li.mm-header > a,
+.mm-column li:not(.mm-header) a:hover {
+  color:#06007c;
+}
+
+.theme-before:before,
+.theme-after:after,
+.btn-theme,
+.theme-bg,
+.theme-hover:hover,
+.fixed-header .header-nav a.btn {
+  background: #06007c;
+}
+
+.theme-hover:hover {
+  border-color: #06007c;
+}
+
+
+@media(max-width: 991px){
+	.header-nav a.btn {
+		background: #06007c;		
+	}
+}

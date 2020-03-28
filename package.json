@@ -1,0 +1,21 @@
+{
+  "name": "tasuedpreneur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The app is meant for tasuedpreneur to get nominated",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mongoose": "*",
+    "nodemon": "^1.18.9",
+    "pdfkit": "^0.9.1"
+  },
+  "author": "Femithz",
+  "license": "ISC"
+}

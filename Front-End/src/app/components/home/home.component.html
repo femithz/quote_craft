@@ -1,0 +1,110 @@
+
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+	  <a class="navbar-brand js-scroll-trigger metin" >Quote Craft</a>
+      <div class="collaps navbar-collap" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" (click)="quotes()">
+            <a class="nav-link js-scroll-trigger" style="cursor: pointer; 
+            font-size: 20px;color:#ffcc00;">Quotes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">
+				Simple, Fast Quote Creator.	
+			</h1>
+            <a data-toggle="modal" data-target="#exampleModal" class="btn btn-outline btn-xl js-scroll-trigger">
+				Create Your Quote for Free!
+			</a>
+			 <!-- Button trigger modal -->
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="../../../assets/img/quote.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    <div class="container" style="color: #fff !important;">
+      <p>  All Rights Reserved &copy; <a href="">Femithz</a> </p>
+      <!-- <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#">Privacy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">Terms</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul> -->
+    </div>
+  </footer>
+
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" style="top: 8rem;" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h3 class="modal-title" id="exampleModalLabel" style="color: #ffcc00;">Create Quote </h3>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form class="form-card" [formGroup]="quoteFormGroup">
+				<fieldset class="form-fieldset">
+					<div class="form-element form-input">
+						<input id="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz" formControlName="author_name" class="form-element-field" placeholder="Author Name " type="text" required/>
+						<div class="form-element-bar"></div>
+						<label class="form-element-label" for="field-uyzeji-352rnc-4rv3g1-bvlh88-9dewuz">Author Name</label>
+						<!-- <small class="form-element-hint">We will never spam you!</small> -->
+					</div>
+					<div class="form-element form-textarea">
+						<textarea id="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm" formControlName="quote" class="form-element-field" placeholder="Quote Content "></textarea>
+						<div class="form-element-bar"></div>
+						<label class="form-element-label" for="field-3naeph-0f3yuw-x153ph-dzmahy-qhkmgm">Quote Content</label>
+			
+					</div>
+				</fieldset>
+				<div class="form-actions">
+					<button class="form-btn" type="submit" (click)="addQuote()">Create Quote</button>
+					<button class="form-btn-cancel -nooutline" data-dismiss="modal" type="reset">Cancel</button>
+				</div>
+			</form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+
+
+  
