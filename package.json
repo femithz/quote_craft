@@ -1,8 +1,8 @@
 {
-  "name": "tasuedpreneur",
+  "name": "quote craft",
   "version": "1.0.0",
   "private": true,
-  "description": "The app is meant for tasuedpreneur to get nominated",
+  "description": "quote craft",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
